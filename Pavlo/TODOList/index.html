@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO List</title>
+    <link type="style" />      
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header class="text-red">My To Do List</header>
+
+    <main>
+    <form id="myForm" >
+        <label>
+            <span>Title</span>
+            <br>
+            <input type="text" id="myTitle" placeholder="Title..." >
+        </label>
+        <br>
+        <label>
+            <span>Coment</span>
+            <br>
+            <textarea type="text" id="myComent" placeholder="Coment..." ></textarea>
+        </label>
+        <br>
+        <button
+            onclick="AddTitle()"
+            class="addBtn">
+            add
+        </button>
+    </form>
+  
+    <ul class="list">
+        <li class="list-item">
+            <input class="checkbox" type="checkbox">
+            <h5>Lorem ipsum dolor sit.</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, debitis.</p>
+            <button
+                onclick="AddTitle()"
+                class="delBtn">
+                Delet
+            </button>
+        </li>
+        <li class="checked">
+            <input type="checkbox">
+            <h5> Lorem, ipsum dolor. </h5>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <button
+                onclick="AddTitle()"
+                class="delBtn">
+                Delet
+            </button>
+        </li>
+        <li>
+            <input type="checkbox">
+            <h5>Lorem, ipsum.</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, neque sit?</p>
+            <button
+                onclick="AddTitle()"
+                class="delBtn">
+                Delet
+            </button>
+        </li>
+        <li>
+            <input type="checkbox">
+            <h5>Lorem, ipsum dolor.</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur mollitia magnam est quo.</p>
+            <button
+                onclick="AddTitle()"
+                class="delBtn">
+                Delet
+            </button>
+        </li>
+        <li>
+            <input type="checkbox">
+            <h5>Lorem, ipsum.</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio magni reiciendis ipsa eos earum culpa libero error aut explicabo doloribus.</p>
+            <button
+                onclick="AddTitle()"
+                class="delBtn">
+                Delet
+            </button>
+        </li>
+
+
+
+        
+
+    </ul>
+    </main>
+
+    <footer>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta totam saepe voluptas incidunt id adipisci perspiciatis rerum neque quis ratione? Perferendis cum dignissimos deserunt odio!</footer>
+
+   <!-- <script type="text/javascript" src="script.js"></script> -->
+    
+</body>
+</html>

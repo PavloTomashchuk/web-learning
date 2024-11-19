@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+}
+
+header,
+main,
+footer {
+    padding: 5px 15px;
+}
+
+header, footer {
+    height: 40px;
+}
+
+header {
+    background-color: pink;
+}
+
+main {
+    background-color: lightblue;
+    min-height: calc(100vh - 40px - 40px - 5px - 5px - 5px - 5px - 5px - 5px);
+}
+
+footer {
+    background-color: lightgrey;
+}
+
+#subscribe {
+    margin: 0 25%;
+
+}
+#login {
+        margin: 20px 0;
+}
+
+.text-red{
+    color: red;
+}
+
+button.text-red{
+    color: brown;
+}
