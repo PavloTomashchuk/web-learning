@@ -1,7 +1,9 @@
 html {
-background-color: #373839;
+  background-color: #373839;
+}
 
-
+* {
+  font-family: sans-serif;
 }
 
 
@@ -24,8 +26,8 @@ main {
 
 
 span {
-  font-size: 20px;
-  padding-left : 50px;
+  /* font-size: 20px; */
+  padding-left: 50px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -34,15 +36,16 @@ span {
 
 form {
   padding: 20px 0 0 0;
-  font-size: 16px;
+  /* font-size: 16px; */
   width: 100%;
   background-color: #8e9196;
   border: none;
-  color: aliceblue;  
+  color: aliceblue;
 }
 
-#myTitle , textarea {
-  margin: 10px ;
+#myTitle,
+textarea {
+  margin: 10px;
   max-width: calc(100% - 24px);
   min-width: calc(100% - 24px);
   text-align: left;
@@ -50,32 +53,48 @@ form {
 }
 
 .addBtn {
-  margin: 10px ;
+  margin: 10px;
   cursor: pointer;
-  font-size: 20px;
+  /* font-size: 20px; */
   border: none;
   padding: 10px 0;
   width: calc(100% - 24px);
   border-radius: 15px;
-} 
-
+}
 .delBtn {
+  /* margin-left: auto; */
+  min-width: 150px;
+  max-width: 150px;
+  padding: 10px 0;
+  border-color: transparent;
+  background-color: rgb(251, 191, 191);
+
+}
+.delBtn:hover{
+  background-color: rgb(234, 152, 152);
+}
+.delBtn:active{
+  background-color: rgb(251, 191, 191);
+}
+
+/* .delBtn {
   margin-left: auto;
   min-width: 150px;
   max-width: 150px;
   cursor: pointer;
-  font-size: 16px;
+   font-size: 16px;
   border: none;
   padding: 10px 0;
   border-radius: 15px;
-}
+} */
+
 
 
 li {
-  border: 1px solid #484848; 
+  border: 1px solid #484848;
   padding: 12px 8px 12px 10px;
-  margin: 5px 0 ; 
-  border-radius: 5px;   
+  margin: 5px 0;
+  border-radius: 5px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -83,21 +102,26 @@ li {
   cursor: pointer;
   position: relative;
   background: #bcbbb5;
-  font-size: 18px;  
+  /* font-size: 18px; */
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none;  
+  user-select: none;
 }
 
-h5, p {
+h5,
+p {
   margin: 0 10px;
+  flex-grow: 2;
+}
+h5{
+  flex-grow: 1.5;
 }
 
-h5 {
+/* h5 {
   min-width: 150px;
-  max-width: 150px;  
-}
+  max-width: 150px;
+} */
 
 #myComent {
   border: 0;
@@ -109,17 +133,26 @@ h5 {
 ul {
   margin: 0;
   padding: 0;
-  font-size: 16px;
+  /* font-size: 16px; */
   width: 100%-40px;
   color: rgb(49, 55, 61);
 }
 
-.checked h5 , .checked p  {
+.checked h5,
+.checked p {
   font-style: italic;
   text-decoration: line-through;
 }
 
 footer {
   color: rgb(161, 180, 198);
-  font-size: 16px;  
+  /* font-size: 16px; */
 }
+
+li h5,p {
+  display: inline-block;
+}
+
+/* .inline-block{
+  display: inline-block;
+} */
